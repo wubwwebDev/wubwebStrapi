@@ -4,6 +4,7 @@ module.exports = ({ env }) => {
   const client = env("DATABASE_CLIENT", "postgres");
 
   const connections = {
+    
     mysql: {
       connection: {
         connectionString: env("DATABASE_URL"),
